@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IMU Gauges</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="gauge.min.js"></script>
+  
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>ESP32 INA219 IMU Gauges</h1>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+          <div class="card">
+          <p class="card-title">Temperature</p>
+          <canvas id="gauge-temperature"></canvas>
+        </div>
+
+        <div class="card">
+          <p class="card-title">Pressure</p>
+          <canvas id="gauge-pressure"></canvas>
+        </div>
+
+         <div class="card">
+          <p class="card-title">INA219</p>
+          <canvas id="gauge-voltmeter"></canvas>
+        </div>
+
+	
+          <div class="card">
+          <p class="card-title">LinearSum</p>
+          <canvas id="gauge-LinearSum"></canvas>
+        </div>
+
+
+
+         <div class="card">
+          <p class="card-title">X</p>
+          <canvas id="gauge-X"></canvas>
+        </div>
+
+	 <div class="card">
+          <p class="card-title">Y</p>
+          <canvas id="gauge-Y"></canvas>
+        </div>
+
+	<div class="card">
+          <p class="card-title">Z</p>
+          <canvas id="gauge-Z"></canvas>
+        </div>
+
+	<div class="card">
+          <p class="card-title">Sum</p>
+          <canvas id="gauge-Sum"></canvas>
+        </div>
+
+	 
+
+
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
